@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deckle — Privacy Policy</title>
+<meta name="description" content="Privacy policy for Deckle, the offline document scanner by Tinquill.">
+<style>
+  :root{ --bg:#fbfaf8; --surface:#ffffff; --ink:#1b1a17; --muted:#6b675f;
+         --line:#e6e2da; --accent:#3f6b4f; --note:#f4f1ea; }
+  @media (prefers-color-scheme:dark){
+    :root{ --bg:#141311; --surface:#1c1b18; --ink:#efece6; --muted:#a39e94;
+           --line:#2c2a26; --accent:#8fbf9f; --note:#201f1b; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:680px;margin:0 auto;padding:56px 24px 96px}
+  .back{font-size:14px;text-decoration:none;color:var(--muted)}
+  h1{font-size:30px;font-weight:600;letter-spacing:-.02em;margin:32px 0 8px}
+  .date{color:var(--muted);font-size:14px;margin:0 0 36px}
+  h2{font-size:19px;font-weight:600;letter-spacing:-.01em;margin:44px 0 12px;
+     padding-top:20px;border-top:1px solid var(--line)}
+  h3{font-size:16px;font-weight:600;margin:26px 0 8px}
+  p,li{color:var(--muted)}
+  li{margin-bottom:7px}
+  strong{color:var(--ink);font-weight:600}
+  .note{background:var(--note);border-radius:10px;padding:20px 24px;margin:28px 0}
+  .note p{margin:0;color:var(--ink)}
+  table{width:100%;border-collapse:collapse;margin:20px 0;font-size:15px;display:block;overflow-x:auto}
+  th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+  td{color:var(--muted)}
+  a{color:var(--accent)}
+  footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);
+    font-size:14px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <a class="back" href="/">&larr; Tinquill</a>
+  <h1>Deckle — Privacy Policy</h1>
+  <p class="date">Last updated: 7 September 2026</p>
+
+  <div class="note">
+    <p><strong>The short version.</strong> Deckle has no servers and no accounts. Your scanned
+    documents are encrypted and stay on your phone — we never receive them, and we could not
+    read them if we wanted to. The only data that leaves your device is what Google's advertising
+    SDK collects to show ads, described below.</p>
+  </div>
+
+  <h2>Who we are</h2>
+  <p>Deckle is an Android app published by <strong>Tinquill</strong>. You can reach us at
+  <a href="mailto:inscorp.dev@gmail.com">inscorp.dev@gmail.com</a>.</p>
+
+  <h2>Your documents</h2>
+  <p>Everything you scan stays in Deckle's private storage on your device.</p>
+  <ul>
+    <li>Page images are <strong>encrypted using a key held in the Android Keystore</strong>
+        (AES-256-GCM). The key is generated on your device and cannot be exported from it.</li>
+    <li>Text recognition (OCR) runs <strong>entirely on your phone</strong> using on-device
+        machine learning. No page is uploaded for processing.</li>
+    <li>Document titles, extracted text, and folder names never leave your device.</li>
+    <li>Files are stored in app-private storage, which other apps cannot read.</li>
+    <li>A document leaves your device only when <strong>you</strong> explicitly share or export it,
+        to a destination you choose.</li>
+  </ul>
+  <p>Uninstalling Deckle permanently deletes every scan it holds. Because the data never reaches
+  us, we cannot recover it for you.</p>
+
+  <h2>What we collect</h2>
+  <p><strong>Nothing.</strong> Tinquill operates no servers for Deckle, has no accounts, and
+  receives no analytics about your documents or your use of the app.</p>
+
+  <h2>What Google's advertising SDK collects</h2>
+  <p>Deckle is free and supported by ads served through <strong>Google AdMob</strong>. To show and
+  measure ads, Google's SDK collects data directly — it does not pass through us:</p>
+  <table>
+    <tr><th>Data</th><th>Purpose</th></tr>
+    <tr><td>Advertising ID (a resettable device identifier)</td><td>Serving and measuring ads, limiting repeats</td></tr>
+    <tr><td>Approximate location, derived from IP address</td><td>Showing region-appropriate ads</td></tr>
+    <tr><td>Device and app information (model, OS version, app version)</td><td>Ad compatibility and fraud prevention</td></tr>
+    <tr><td>Ad interaction events (views, clicks)</td><td>Measuring ad performance</td></tr>
+  </table>
+  <p>This is governed by
+  <a href="https://policies.google.com/privacy" rel="noopener">Google's Privacy Policy</a>.
+  Google's use of advertising data is described at
+  <a href="https://policies.google.com/technologies/partner-sites" rel="noopener">policies.google.com/technologies/partner-sites</a>.</p>
+  <p><strong>Ads never see your documents.</strong> No scan, no extracted text, and no filename is
+  shared with Google or any advertiser.</p>
+
+  <h3>Your choices</h3>
+  <ul>
+    <li><strong>Reset or delete your Advertising ID</strong> in Android
+        <em>Settings &rarr; Privacy &rarr; Ads</em>. Deleting it stops personalised ads across all apps.</li>
+    <li><strong>Change your consent</strong> at any time in Deckle under
+        <em>Settings &rarr; Privacy &rarr; Ad preferences</em>.</li>
+  </ul>
+
+  <h3>If you are in the EEA, the UK, or Switzerland</h3>
+  <p>Before any ad loads, Deckle shows a consent form provided by Google's User Messaging Platform,
+  where you choose whether to allow personalised ads. Your choice is stored on your device and can
+  be changed at any time from Deckle's Settings screen.</p>
+
+  <h2>Permissions Deckle uses</h2>
+  <table>
+    <tr><th>Permission</th><th>Why</th></tr>
+    <tr><td>Camera</td><td>To photograph the pages you scan. Images go straight into encrypted app storage.</td></tr>
+    <tr><td>Internet</td><td>Used only to load ads. Never used to transmit your documents.</td></tr>
+  </table>
+  <p>Deckle does <strong>not</strong> request access to your photo library, files, contacts,
+  microphone, or precise location.</p>
+
+  <h2>Children</h2>
+  <p>Deckle is not directed to children under 13 and we do not knowingly collect data from them.
+  The app is rated for a general audience.</p>
+
+  <h2>Data retention</h2>
+  <p>Your scans remain on your device until you delete them or uninstall the app. We hold no copy
+  and therefore have nothing to retain or delete on your behalf. For advertising data held by
+  Google, use the Advertising ID controls above or contact Google directly.</p>
+
+  <h2>Your rights</h2>
+  <p>Under GDPR, UK GDPR, CCPA and similar laws you have rights to access, correct, and delete your
+  personal data. Because Tinquill holds none, there is nothing to request from us — your documents
+  are already exclusively in your possession. For data held by Google as an advertising provider,
+  exercise those rights through Google.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes we will update this page and revise the date at the top. Material
+  changes will also be noted in the app's release notes.</p>
+
+  <h2>Contact</h2>
+  <p>Tinquill — <a href="mailto:inscorp.dev@gmail.com">inscorp.dev@gmail.com</a></p>
+
+  <footer>&copy; 2026 Tinquill</footer>
+
+</div>
+</body>
+</html>

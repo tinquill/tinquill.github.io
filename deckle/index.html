@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deckle — Scan to PDF</title>
+<meta name="description" content="Scan documents to PDF offline. No account, no watermark, no subscription.">
+<style>
+  :root{ --bg:#fbfaf8; --surface:#ffffff; --ink:#1b1a17; --muted:#6b675f;
+         --line:#e6e2da; --accent:#3f6b4f; }
+  @media (prefers-color-scheme:dark){
+    :root{ --bg:#141311; --surface:#1c1b18; --ink:#efece6; --muted:#a39e94;
+           --line:#2c2a26; --accent:#8fbf9f; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:640px;margin:0 auto;padding:56px 24px 96px}
+  .back{font-size:14px;text-decoration:none;color:var(--muted)}
+  h1{font-size:32px;font-weight:600;letter-spacing:-.02em;margin:32px 0 12px}
+  .lead{font-size:18px;color:var(--ink);margin:0 0 10px}
+  p{color:var(--muted)}
+  .tags{margin:22px 0 44px;display:flex;flex-wrap:wrap;gap:8px}
+  .tag{font-size:13px;color:var(--accent);border:1px solid var(--line);
+    border-radius:999px;padding:4px 12px}
+  h2{font-size:13px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);
+     font-weight:600;margin:44px 0 16px}
+  ul{padding-left:20px}
+  li{color:var(--muted);margin-bottom:9px}
+  a{color:var(--accent)}
+  footer{margin-top:64px;padding-top:22px;border-top:1px solid var(--line);
+    font-size:14px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="/">&larr; Tinquill</a>
+  <h1>Deckle</h1>
+  <p class="lead">Scan documents to PDF in seconds.</p>
+  <p>Point your camera at a page. Deckle finds the edges, straightens it, cleans it up, and saves a
+  sharp PDF you can share anywhere.</p>
+  <div class="tags">
+    <span class="tag">Offline</span>
+    <span class="tag">No account</span>
+    <span class="tag">No watermark</span>
+  </div>
+
+  <h2>What it does</h2>
+  <ul>
+    <li>Automatic edge detection and perspective correction</li>
+    <li>Multi-page scanning — build a whole document in one session</li>
+    <li>Filters: original colour, greyscale, high-contrast black &amp; white</li>
+    <li>Search the text inside your scans, recognised on your device</li>
+    <li>Export as PDF or JPEG, share to any app</li>
+    <li>Folders, rename, sort</li>
+    <li>Optional fingerprint lock</li>
+  </ul>
+
+  <h2>Privacy</h2>
+  <p>Deckle has no servers and no accounts. Scans are encrypted on your device and never uploaded.
+  Full detail in the <a href="/deckle/privacy/">privacy policy</a>.</p>
+
+  <footer>&copy; 2026 Tinquill &middot; <a href="/deckle/privacy/">Privacy</a></footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,9 @@
+# app-ads.txt — Tinquill
+#
+# PLACEHOLDER. Replace pub-0000000000000000 with your real AdMob Publisher ID
+# once the AdMob account exists (AdMob > Settings > Publisher ID, or
+# AdMob > Apps > app-ads.txt, which shows the exact line to paste).
+#
+# Until the real ID is here this file does nothing. See docs/10 section 2.
+
+google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0

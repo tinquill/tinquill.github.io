@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tinquill</title>
+<meta name="description" content="Tinquill builds small, private, offline-first Android apps.">
+<style>
+  :root{
+    --bg:#fbfaf8; --surface:#ffffff; --ink:#1b1a17; --muted:#6b675f;
+    --line:#e6e2da; --accent:#3f6b4f;
+  }
+  @media (prefers-color-scheme:dark){
+    :root{ --bg:#141311; --surface:#1c1b18; --ink:#efece6; --muted:#a39e94;
+           --line:#2c2a26; --accent:#8fbf9f; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.65 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:640px;margin:0 auto;padding:72px 24px 96px}
+  header{margin-bottom:64px}
+  .mark{display:inline-flex;align-items:center;gap:10px;text-decoration:none;color:var(--ink)}
+  .mark svg{display:block}
+  .mark span{font-size:20px;font-weight:600;letter-spacing:-.01em}
+  h1{font-size:30px;line-height:1.25;font-weight:600;letter-spacing:-.02em;margin:40px 0 16px}
+  p{margin:0 0 18px;color:var(--muted)}
+  p.lead{color:var(--ink);font-size:18px}
+  h2{font-size:13px;text-transform:uppercase;letter-spacing:.09em;color:var(--muted);
+     font-weight:600;margin:56px 0 20px}
+  .app{display:block;text-decoration:none;color:inherit;background:var(--surface);
+    border:1px solid var(--line);border-radius:12px;padding:22px 24px}
+  .app h3{margin:0 0 6px;font-size:17px;font-weight:600}
+  .app p{margin:0;font-size:15px}
+  .tags{margin-top:14px;display:flex;flex-wrap:wrap;gap:7px}
+  .tag{font-size:12px;color:var(--accent);border:1px solid var(--line);
+    border-radius:999px;padding:3px 10px}
+  a{color:var(--accent)}
+  footer{margin-top:72px;padding-top:24px;border-top:1px solid var(--line);
+    font-size:14px;color:var(--muted)}
+  footer a{margin-right:18px}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <a class="mark" href="/">
+      <svg width="26" height="26" viewBox="0 0 26 26" fill="none" aria-hidden="true">
+        <rect x="1" y="1" width="24" height="24" rx="6" stroke="currentColor" stroke-width="1.5" opacity=".35"/>
+        <path d="M8 17.5c1.6-5.4 4.2-8.3 8.6-9.6-1.2 4.9-3.8 8-8.6 9.6Z"
+              stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+      </svg>
+      <span>Tinquill</span>
+    </a>
+  </header>
+
+  <h1>Small tools that mind their own business.</h1>
+  <p class="lead">Tinquill builds focused Android apps that work offline, need no account, and keep your data on your device.</p>
+  <p>No sign-ups. No cloud we control. No watermarks on things you made. Each app does one job and gets out of the way.</p>
+
+  <h2>Apps</h2>
+  <a class="app" href="/deckle/">
+    <h3>Deckle — Scan to PDF</h3>
+    <p>Point your camera at a page and get a clean, searchable PDF. Text recognition runs on your phone, so nothing is uploaded.</p>
+    <div class="tags">
+      <span class="tag">Offline</span>
+      <span class="tag">No account</span>
+      <span class="tag">No watermark</span>
+    </div>
+  </a>
+
+  <h2>Contact</h2>
+  <p>Questions, bugs, or feature requests — we read everything.<br>
+     <a href="mailto:inscorp.dev@gmail.com">inscorp.dev@gmail.com</a></p>
+
+  <footer>
+    <a href="/deckle/privacy/">Deckle privacy policy</a>
+    <a href="/app-ads.txt">app-ads.txt</a>
+  </footer>
+
+</div>
+</body>
+</html>

@@ -42,13 +42,14 @@
 
   <a class="back" href="/">&larr; Tinquill</a>
   <h1>Deckle — Privacy Policy</h1>
-  <p class="date">Last updated: 7 September 2026</p>
+  <p class="date">Last updated: 14 September 2026</p>
 
   <div class="note">
     <p><strong>The short version.</strong> Deckle has no servers and no accounts. Your scanned
     documents are encrypted and stay on your phone — we never receive them, and we could not
-    read them if we wanted to. The only data that leaves your device is what Google's advertising
-    SDK collects to show ads, described below.</p>
+    read them if we wanted to. Deckle includes no analytics or crash-reporting SDK of any kind.
+    The only data that leaves your device is what Google's advertising SDK collects to show ads,
+    described below.</p>
   </div>
 
   <h2>Who we are</h2>
@@ -61,18 +62,39 @@
     <li>Page images are <strong>encrypted using a key held in the Android Keystore</strong>
         (AES-256-GCM). The key is generated on your device and cannot be exported from it.</li>
     <li>Text recognition (OCR) runs <strong>entirely on your phone</strong> using on-device
-        machine learning. No page is uploaded for processing.</li>
+        machine learning (Google ML Kit, bundled with the app — no page is ever uploaded for
+        processing). Extracted text stays in the same on-device, encrypted store as the images.</li>
     <li>Document titles, extracted text, and folder names never leave your device.</li>
-    <li>Files are stored in app-private storage, which other apps cannot read.</li>
+    <li>Files are stored in app-private storage, which other apps cannot read, and are excluded
+        from Android's automatic cloud backup.</li>
     <li>A document leaves your device only when <strong>you</strong> explicitly share or export it,
         to a destination you choose.</li>
   </ul>
-  <p>Uninstalling Deckle permanently deletes every scan it holds. Because the data never reaches
-  us, we cannot recover it for you.</p>
+  <p>Uninstalling Deckle — or deleting documents individually from within the app — permanently
+  removes them from your device. Because the data never reaches us, we cannot recover it for you
+  and have nothing to delete on our end.</p>
+
+  <h2>How scanning and barcode capture work</h2>
+  <p>Deckle does not request Android's Camera permission itself, and none of the following sends
+  an image anywhere off your device:</p>
+  <ul>
+    <li><strong>Document scanning</strong> uses the ML Kit Document Scanner, a component of Google
+        Play services. It runs as its own screen with its own camera access; Deckle never sees a
+        raw camera feed, only the cropped page image it hands back.</li>
+    <li><strong>Barcode / QR capture</strong> opens your device's own Camera app to take a single
+        photo, the same way any app can ask for a photo. Deckle decodes the barcode from that photo
+        on-device (again with ML Kit) and does not keep the photo once decoding is done.</li>
+  </ul>
+
+  <h2>App lock</h2>
+  <p>Deckle's optional biometric app lock (fingerprint/face, via Android's own BiometricPrompt) is
+  enforced entirely on your device. No biometric data is ever collected, stored, or seen by
+  Tinquill — Android itself handles the match and only tells Deckle whether it succeeded.</p>
 
   <h2>What we collect</h2>
-  <p><strong>Nothing.</strong> Tinquill operates no servers for Deckle, has no accounts, and
-  receives no analytics about your documents or your use of the app.</p>
+  <p><strong>Nothing.</strong> Tinquill operates no servers for Deckle, has no accounts, and Deckle
+  contains no analytics or crash-reporting software of any kind — we have no visibility into your
+  documents or your use of the app.</p>
 
   <h2>What Google's advertising SDK collects</h2>
   <p>Deckle is free and supported by ads served through <strong>Google AdMob</strong>. To show and
@@ -96,22 +118,34 @@
     <li><strong>Reset or delete your Advertising ID</strong> in Android
         <em>Settings &rarr; Privacy &rarr; Ads</em>. Deleting it stops personalised ads across all apps.</li>
     <li><strong>Change your consent</strong> at any time in Deckle under
-        <em>Settings &rarr; Privacy &rarr; Ad preferences</em>.</li>
+        <em>Settings &rarr; Privacy &rarr; Privacy choices</em>. This row only appears if consent
+        withdrawal legally applies to you (currently the EEA, UK and Switzerland — see below).</li>
   </ul>
 
   <h3>If you are in the EEA, the UK, or Switzerland</h3>
-  <p>Before any ad loads, Deckle shows a consent form provided by Google's User Messaging Platform,
-  where you choose whether to allow personalised ads. Your choice is stored on your device and can
-  be changed at any time from Deckle's Settings screen.</p>
+  <p>Before any ad loads, Deckle shows a consent form provided by Google's User Messaging Platform
+  (UMP), where you choose whether to allow personalised ads. Your choice is stored on your device
+  and can be changed at any time from Deckle's Settings screen.</p>
+
+  <h3>If you are in a US state with its own privacy law</h3>
+  <p>Google's User Messaging Platform also recognises applicable US state privacy signals (for
+  example, opt-out-of-sale/share signals under laws like the CCPA/CPRA) and adjusts the ads Deckle
+  is served accordingly, the same way it does for EEA/UK consent.</p>
 
   <h2>Permissions Deckle uses</h2>
   <table>
     <tr><th>Permission</th><th>Why</th></tr>
-    <tr><td>Camera</td><td>To photograph the pages you scan. Images go straight into encrypted app storage.</td></tr>
-    <tr><td>Internet</td><td>Used only to load ads. Never used to transmit your documents.</td></tr>
+    <tr><td>Internet, network state</td><td>Loading ads and the UMP consent form. Never used to transmit your documents — see "How scanning and barcode capture work" above.</td></tr>
+    <tr><td>Advertising ID (<code>AD_ID</code>) and Android's ad-measurement APIs
+        (<code>ACCESS_ADSERVICES_AD_ID</code>, <code>ACCESS_ADSERVICES_ATTRIBUTION</code>,
+        <code>ACCESS_ADSERVICES_TOPICS</code>)</td>
+        <td>Declared automatically by the Google Mobile Ads SDK Deckle includes, for ad
+        personalisation, measurement and fraud prevention as described above.</td></tr>
+    <tr><td>Notifications</td><td>Shows the progress notification while a PDF export is running. Contains no document content — just a progress bar.</td></tr>
+    <tr><td>Biometric hardware (fingerprint/face unlock)</td><td>Only used if you turn on the optional app lock in Settings. See "App lock" above.</td></tr>
   </table>
-  <p>Deckle does <strong>not</strong> request access to your photo library, files, contacts,
-  microphone, or precise location.</p>
+  <p>Deckle does <strong>not</strong> request Android's Camera permission, and does not request
+  access to your photo library, contacts, microphone, or precise/coarse location.</p>
 
   <h2>Children</h2>
   <p>Deckle is not directed to children under 13 and we do not knowingly collect data from them.

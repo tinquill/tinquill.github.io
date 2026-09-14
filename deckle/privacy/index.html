@@ -47,9 +47,10 @@
   <div class="note">
     <p><strong>The short version.</strong> Deckle has no servers and no accounts. Your scanned
     documents are encrypted and stay on your phone — we never receive them, and we could not
-    read them if we wanted to. Deckle includes no analytics or crash-reporting SDK of any kind.
-    The only data that leaves your device is what Google's advertising SDK collects to show ads,
-    described below.</p>
+    read them if we wanted to. Deckle includes no analytics or crash-reporting SDK of its own.
+    The only data that leaves your device is what two Google components send to Google: the
+    advertising SDK, to show ads, and ML Kit, as technical diagnostics. Neither ever includes your
+    documents or their text. Both are described below.</p>
   </div>
 
   <h2>Who we are</h2>
@@ -93,8 +94,22 @@
 
   <h2>What we collect</h2>
   <p><strong>Nothing.</strong> Tinquill operates no servers for Deckle, has no accounts, and Deckle
-  contains no analytics or crash-reporting software of any kind — we have no visibility into your
-  documents or your use of the app.</p>
+  contains no analytics or crash-reporting software of its own — we receive no data about you, your
+  documents, or your use of the app.</p>
+
+  <h2>What Google ML Kit sends for diagnostics</h2>
+  <p>Deckle's scanning, text recognition and barcode features use Google ML Kit. Even when the
+  processing itself happens on your phone, ML Kit sends Google a small amount of technical data for
+  <a href="https://developers.google.com/ml-kit/android-data-disclosure">diagnostics and usage
+  analytics</a>, encrypted in transit (HTTPS):</p>
+  <ul>
+    <li>Device information (manufacturer, model, Android version, ML hardware)</li>
+    <li>App information (package name and version)</li>
+    <li>A per-installation identifier, which Google states is not intended to identify you or your device</li>
+    <li>Performance and error metrics, such as processing time, image format and size, and error codes</li>
+  </ul>
+  <p>This never includes your page images, extracted text, barcode contents, or filenames. Google
+  states that ML Kit does not transfer this data to third parties.</p>
 
   <h2>What Google's advertising SDK collects</h2>
   <p>Deckle is free and supported by ads served through <strong>Google AdMob</strong>. To show and

@@ -42,7 +42,7 @@
 
   <a class="back" href="/">&larr; Tinquill</a>
   <h1>Deckle — Privacy Policy</h1>
-  <p class="date">Last updated: 14 September 2026</p>
+  <p class="date">Last updated: 15 September 2026</p>
 
   <div class="note">
     <p><strong>The short version.</strong> Deckle has no servers and no accounts. Your scanned
@@ -76,15 +76,19 @@
   and have nothing to delete on our end.</p>
 
   <h2>How scanning and barcode capture work</h2>
-  <p>Deckle does not request Android's Camera permission itself, and none of the following sends
-  an image anywhere off your device:</p>
+  <p>None of the following sends an image anywhere off your device:</p>
   <ul>
     <li><strong>Document scanning</strong> uses the ML Kit Document Scanner, a component of Google
         Play services. It runs as its own screen with its own camera access; Deckle never sees a
-        raw camera feed, only the cropped page image it hands back.</li>
-    <li><strong>Barcode / QR capture</strong> opens your device's own Camera app to take a single
-        photo, the same way any app can ask for a photo. Deckle decodes the barcode from that photo
-        on-device (again with ML Kit) and does not keep the photo once decoding is done.</li>
+        raw camera feed, only the cropped page image it hands back. This does not use Android's
+        Camera permission — it is Play services' own camera flow, entirely separate from the
+        permission described below.</li>
+    <li><strong>Live QR / barcode scanning</strong> requests Android's <strong>Camera</strong>
+        permission so Deckle can show a live viewfinder and decode codes as you point your camera
+        at them. Camera frames are analysed on-device (again with ML Kit) as they arrive and are
+        never saved, stored, or sent anywhere — a frame exists only for the instant it takes to
+        check it for a barcode, then it is discarded. You can also pick an existing photo from your
+        gallery to decode instead, which needs no camera permission at all.</li>
   </ul>
 
   <h2>App lock</h2>
@@ -158,9 +162,10 @@
         personalisation, measurement and fraud prevention as described above.</td></tr>
     <tr><td>Notifications</td><td>Shows the progress notification while a PDF export is running. Contains no document content — just a progress bar.</td></tr>
     <tr><td>Biometric hardware (fingerprint/face unlock)</td><td>Only used if you turn on the optional app lock in Settings. See "App lock" above.</td></tr>
+    <tr><td>Camera</td><td>Only for the live QR/barcode scanner's viewfinder. Requested the moment you open that screen, never at app launch. See "How scanning and barcode capture work" above — document scanning does not use this permission. Picking a photo from your gallery to scan works without it.</td></tr>
   </table>
-  <p>Deckle does <strong>not</strong> request Android's Camera permission, and does not request
-  access to your photo library, contacts, microphone, or precise/coarse location.</p>
+  <p>Deckle does <strong>not</strong> request access to your photo library, contacts, microphone, or
+  precise/coarse location.</p>
 
   <h2>Children</h2>
   <p>Deckle is not directed to children under 13 and we do not knowingly collect data from them.

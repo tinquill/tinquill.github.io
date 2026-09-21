@@ -1,9 +1,13 @@
 # app-ads.txt — Tinquill
 #
-# PLACEHOLDER. Replace pub-0000000000000000 with your real AdMob Publisher ID
-# once the AdMob account exists (AdMob > Settings > Publisher ID, or
-# AdMob > Apps > app-ads.txt, which shows the exact line to paste).
+# Authorises Google/AdMob to sell ad inventory in Tinquill's apps.
+# See https://iabtechlab.com/ads-txt/ and docs/10 section 2 in the Deckle repo.
 #
-# Until the real ID is here this file does nothing. See docs/10 section 2.
+# For this file to be found, the developer website declared on each app's Google
+# Play listing must be https://tinquill.github.io — the crawler starts there.
+#
+# Fields: <exchange domain>, <publisher ID>, <relationship>, <certification authority ID>
+# f08c47fec0942fa0 is Google's own certification authority ID and is the same for
+# every publisher; it is not a secret and is not specific to this account.
 
-google.com, pub-0000000000000000, DIRECT, f08c47fec0942fa0
+google.com, pub-3426913117312113, DIRECT, f08c47fec0942fa0

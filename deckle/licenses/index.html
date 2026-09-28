@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Deckle — Open-source licences</title>
+<meta name="description" content="Third-party open-source software used in Deckle, the on-device document scanner by Tinquill.">
+<style>
+  :root{ --bg:#fbfaf8; --surface:#ffffff; --ink:#1b1a17; --muted:#6b675f;
+         --line:#e6e2da; --accent:#3f6b4f; --note:#f4f1ea; }
+  @media (prefers-color-scheme:dark){
+    :root{ --bg:#141311; --surface:#1c1b18; --ink:#efece6; --muted:#a39e94;
+           --line:#2c2a26; --accent:#8fbf9f; --note:#201f1b; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:680px;margin:0 auto;padding:56px 24px 96px}
+  .back{font-size:14px;text-decoration:none;color:var(--muted)}
+  h1{font-size:30px;font-weight:600;letter-spacing:-.02em;margin:32px 0 8px}
+  .date{color:var(--muted);font-size:14px;margin:0 0 36px}
+  h2{font-size:19px;font-weight:600;letter-spacing:-.01em;margin:44px 0 12px;
+     padding-top:20px;border-top:1px solid var(--line)}
+  h3{font-size:16px;font-weight:600;margin:26px 0 8px}
+  p,li{color:var(--muted)}
+  li{margin-bottom:7px}
+  strong{color:var(--ink);font-weight:600}
+  .note{background:var(--note);border-radius:10px;padding:20px 24px;margin:28px 0}
+  .note p{margin:0;color:var(--ink)}
+  table{width:100%;border-collapse:collapse;margin:20px 0;font-size:15px;display:block;overflow-x:auto}
+  th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+  td{color:var(--muted)}
+  a{color:var(--accent)}
+  footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);
+    font-size:14px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <a class="back" href="../">&larr; Deckle</a>
+
+  <h1>Open-source licences</h1>
+  <p class="date">Last updated: 28 September 2026</p>
+
+  <p>Deckle is built on open-source software. The libraries below are used in the app, with the
+  licence each is distributed under. We are grateful to everyone who maintains them.</p>
+
+  <table>
+    <thead><tr><th>Library</th><th>Licence</th></tr></thead>
+    <tbody>
+    <tr><td><strong>Jetpack Compose</strong></td><td>Apache License 2.0</td></tr>
+    <tr><td><strong>AndroidX — Core, Navigation, DataStore, Room, WorkManager, Biometric</strong></td><td>Apache License 2.0</td></tr>
+    <tr><td><strong>Kotlin, kotlinx.coroutines, kotlinx.serialization</strong></td><td>Apache License 2.0</td></tr>
+    <tr><td><strong>Dagger / Hilt</strong></td><td>Apache License 2.0</td></tr>
+    <tr><td><strong>Coil</strong></td><td>Apache License 2.0</td></tr>
+    <tr><td><strong>ML Kit — Document Scanner, Text Recognition, Barcode Scanning</strong></td><td>Google Play Services Terms of Service</td></tr>
+    <tr><td><strong>Google Mobile Ads SDK and User Messaging Platform SDK</strong></td><td>Google Play Services Terms of Service</td></tr>
+    <tr><td><strong>Firebase Crashlytics</strong></td><td>Apache License 2.0</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Apache License 2.0</h2>
+  <p>The libraries listed above as Apache 2.0 are distributed under the Apache License, Version 2.0.
+  You may obtain a copy of the licence at
+  <a href="https://www.apache.org/licenses/LICENSE-2.0">apache.org/licenses/LICENSE-2.0</a>.</p>
+  <p>Unless required by applicable law or agreed to in writing, software distributed under the
+  Licence is distributed on an &ldquo;AS IS&rdquo; BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+  KIND, either express or implied. See the Licence for the specific language governing permissions
+  and limitations under it.</p>
+
+  <h2>Google Play Services Terms of Service</h2>
+  <p>ML Kit and the Google Mobile Ads and User Messaging Platform SDKs are distributed by Google
+  under the Google APIs Terms of Service rather than an OSI-approved open-source licence. See
+  <a href="https://developers.google.com/terms">developers.google.com/terms</a>.</p>
+
+  <div class="note">
+    <p>Deckle processes your documents entirely on your device. None of the libraries above send
+    your scans, your extracted text, or your filenames anywhere. See the
+    <a href="../privacy/">privacy policy</a> for what does and does not leave your phone.</p>
+  </div>
+
+  <h2>Contact</h2>
+  <p>Tinquill — <a href="mailto:inscorp.dev@gmail.com">inscorp.dev@gmail.com</a></p>
+
+  <footer>&copy; 2026 Tinquill</footer>
+
+</div>
+</body>
+</html>

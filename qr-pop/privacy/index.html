@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QR Pop — Privacy Policy</title>
+<meta name="description" content="Privacy policy for QR Pop, the QR and barcode scanner and generator by Tinquill.">
+<style>
+  :root{ --bg:#F7F6FB; --surface:#ffffff; --ink:#1b1a17; --muted:#6b675f;
+         --line:#e6e2da; --accent:#6C4DFF; --note:#EEEBFF; }
+  @media (prefers-color-scheme:dark){
+    :root{ --bg:#0E0D14; --surface:#1c1b18; --ink:#efece6; --muted:#a39e94;
+           --line:#2c2a26; --accent:#9B87FF; --note:#1A1824; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    -webkit-font-smoothing:antialiased}
+  .wrap{max-width:680px;margin:0 auto;padding:56px 24px 96px}
+  .back{font-size:14px;text-decoration:none;color:var(--muted)}
+  h1{font-size:30px;font-weight:600;letter-spacing:-.02em;margin:32px 0 8px}
+  .date{color:var(--muted);font-size:14px;margin:0 0 36px}
+  h2{font-size:19px;font-weight:600;letter-spacing:-.01em;margin:44px 0 12px;
+     padding-top:20px;border-top:1px solid var(--line)}
+  h3{font-size:16px;font-weight:600;margin:26px 0 8px}
+  p,li{color:var(--muted)}
+  li{margin-bottom:7px}
+  strong{color:var(--ink);font-weight:600}
+  .note{background:var(--note);border-radius:10px;padding:20px 24px;margin:28px 0}
+  .note p{margin:0;color:var(--ink)}
+  table{width:100%;border-collapse:collapse;margin:20px 0;font-size:15px;display:block;overflow-x:auto}
+  th,td{text-align:left;padding:11px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+  td{color:var(--muted)}
+  a{color:var(--accent)}
+  footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);
+    font-size:14px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <a class="back" href="/">&larr; Tinquill</a>
+  <h1>QR Pop — Privacy Policy</h1>
+  <p class="date">Last updated: 29 September 2026</p>
+
+  <div class="note">
+    <p><strong>The short version.</strong> QR Pop has no servers and no accounts. Everything you
+    scan and everything you create stays on your phone — we never receive it. The only data that
+    leaves your device is what Google components send to Google: the advertising SDK, to show
+    ads; ML Kit, as technical diagnostics; and, <strong>only if you switch it on</strong>, crash
+    reports. None of them ever includes what you scanned or created.</p>
+  </div>
+
+  <h2>Who we are</h2>
+  <p>QR Pop is an Android app published by <strong>Tinquill</strong>. You can reach us at
+  <a href="mailto:inscorp.dev@gmail.com">inscorp.dev@gmail.com</a>.</p>
+
+  <h2>What you scan</h2>
+  <ul>
+    <li>Camera frames are analysed on your phone by Google ML Kit, bundled inside the app. A frame
+        exists only for the instant it takes to look for a code, then it is discarded. Frames are
+        never saved or sent anywhere.</li>
+    <li>Scanning an image you pick or share with QR Pop works the same way: decoded on your phone,
+        never uploaded. Picking a photo uses Android's photo picker and needs no storage permission.</li>
+    <li>QR Pop does not check links against any server. It inspects the link's structure on your
+        phone and shows its real destination. When you tap <em>Open</em>, the link opens in your
+        browser, which applies its own safety checks.</li>
+    <li>QR Pop never opens a link, dials a number, or sends a message by itself — only when you tap
+        the action.</li>
+  </ul>
+
+  <h2>Scan history</h2>
+  <ul>
+    <li>History is stored in QR Pop's private storage on your phone, which other apps cannot read,
+        and is excluded from Android's cloud backup and device transfer.</li>
+    <li>Wi-Fi passwords in history are encrypted with a key held in the Android Keystore
+        (AES-256-GCM). The key is created on your device and cannot be exported.</li>
+    <li>Two-factor authentication setup codes and driving-licence barcodes are never saved.</li>
+    <li>No location is recorded with any scan.</li>
+    <li>You choose how long history is kept, and can delete any item or all of it at any time.
+        Uninstalling QR Pop removes it. We hold no copy, so we cannot recover it.</li>
+  </ul>
+
+  <h2>Codes you create</h2>
+  <p>QR codes are generated on your phone. They leave your device only when you save them to your
+  gallery or share them, to a destination you choose. Saved images are ordinary files that other
+  apps with photo access can read.</p>
+
+  <h2>What we collect</h2>
+  <p><strong>Nothing.</strong> Tinquill operates no servers for QR Pop, has no accounts, and QR Pop
+  contains no analytics software — we receive no data about you, your scans, or your use of the app.</p>
+
+  <h2>Crash reports (off unless you switch them on)</h2>
+  <p>QR Pop includes Firebase Crashlytics, <strong>disabled by default</strong>. If you turn on
+  <em>Settings &rarr; Send crash reports</em>, a report is sent to Google Firebase when the app
+  crashes: the stack trace, device model, Android version, app version, and a per-installation
+  identifier. Reports never include scan contents, history, or created codes. You can switch it off
+  again at any time.</p>
+
+  <h2>What Google ML Kit sends for diagnostics</h2>
+  <p>Even though scanning happens on your phone, ML Kit sends Google a small amount of technical
+  data for diagnostics and usage analytics, encrypted in transit:</p>
+  <ul>
+    <li>Device information (manufacturer, model, Android version)</li>
+    <li>App information (package name and version)</li>
+    <li>A per-installation identifier, which Google states is not intended to identify you or your device</li>
+    <li>Performance and error metrics, such as processing time and error codes</li>
+  </ul>
+  <p>This never includes camera images or barcode contents.</p>
+
+  <h2>What Google's advertising SDK collects</h2>
+  <p>QR Pop is free and supported by ads served through Google AdMob. Ads never appear on the
+  camera or on a scan result. To show and measure ads, Google's SDK collects data directly — it does
+  not pass through us:</p>
+  <table>
+    <tr><th>Data</th><th>Purpose</th></tr>
+    <tr><td>Advertising ID (a resettable device identifier)</td><td>Serving and measuring ads, limiting repeats</td></tr>
+    <tr><td>Approximate location, derived from IP address</td><td>Showing region-appropriate ads</td></tr>
+    <tr><td>Device and app information</td><td>Ad compatibility and fraud prevention</td></tr>
+    <tr><td>Ad interaction events (views, clicks)</td><td>Measuring ad performance</td></tr>
+  </table>
+  <p>This is governed by <a href="https://policies.google.com/privacy">Google's Privacy Policy</a>;
+  see also <a href="https://policies.google.com/technologies/partner-sites">how Google uses data from partner apps</a>.
+  <strong>Ads never see what you scan or create.</strong></p>
+
+  <h2>Your choices</h2>
+  <ul>
+    <li>Reset or delete your Advertising ID in Android Settings &rarr; Privacy &rarr; Ads.</li>
+    <li>If you are in the EEA, the UK or Switzerland, QR Pop shows Google's consent form before any
+        ad loads, and you can change your choice in <em>Settings &rarr; Privacy choices</em>.</li>
+    <li>In US states with their own privacy laws, Google's consent platform honours applicable
+        opt-out signals.</li>
+  </ul>
+
+  <h2>Permissions QR Pop uses</h2>
+  <table>
+    <tr><th>Permission</th><th>Why</th></tr>
+    <tr><td>Camera</td><td>Live scanning. Requested when you first open the scanner.</td></tr>
+    <tr><td>Internet, network state</td><td>Ads, the consent form, and crash reports if you enable them. Never used to send scans.</td></tr>
+    <tr><td>Advertising ID and Android ad-measurement APIs</td><td>Declared by the Google Mobile Ads SDK, as described above.</td></tr>
+    <tr><td>Storage (Android 8–9 only)</td><td>Saving a QR code you created to your gallery on older Android versions.</td></tr>
+  </table>
+  <p>QR Pop does not request access to your contacts, location, microphone, or photo library.
+  Saving a contact, joining Wi-Fi, or adding a calendar event hands the details to Android's own
+  screen, where you confirm.</p>
+
+  <h2>Children</h2>
+  <p>QR Pop is not directed to children under 13 and we do not knowingly collect data from them.</p>
+
+  <h2>Your rights</h2>
+  <p>Under GDPR, UK GDPR, CCPA and similar laws you have rights to access, correct and delete your
+  personal data. Tinquill holds none. For data held by Google, exercise those rights through Google.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>If this policy changes we will update this page and revise the date at the top. Material
+  changes will also be noted in the app's release notes.</p>
+
+  <h2>Open-source licences</h2>
+  <p>QR Pop is built on open-source software. The licences are listed in the app under
+  <em>Settings &rarr; Licences</em>.</p>
+
+  <footer>Tinquill — <a href="mailto:inscorp.dev@gmail.com">inscorp.dev@gmail.com</a><br>&copy; 2026 Tinquill</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QR Pop — Open-source licences</title>
+<meta name="description" content="Open-source software used in QR Pop, the QR and barcode scanner and generator by Tinquill.">
+<style>
+  :root{ --bg:#F7F6FB; --surface:#ffffff; --ink:#17151F; --muted:#5B5670; --line:#E6E3EF; --accent:#5B2EFF; --note:#ECE6FF; }
+  @media (prefers-color-scheme:dark){
+    :root{ --bg:#0E0D14; --surface:#1A1824; --ink:#ECEAF3; --muted:#A9A4BA; --line:#2A2736; --accent:#A08BFF; --note:#1A1824; }
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font:16px/1.7 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:760px;margin:0 auto;padding:56px 24px 96px}
+  .back{font-size:14px;text-decoration:none;color:var(--muted)}
+  h1{font-size:30px;font-weight:600;letter-spacing:-.02em;margin:32px 0 8px}
+  .date{color:var(--muted);font-size:14px;margin:0 0 28px}
+  h2{font-size:18px;font-weight:600;margin:40px 0 10px;padding-top:18px;border-top:1px solid var(--line)}
+  h2 a{color:var(--ink);text-decoration:none} .count{color:var(--muted);font-weight:400;font-size:14px}
+  p{color:var(--muted)}
+  .note{background:var(--note);border-radius:10px;padding:20px 24px;margin:28px 0} .note p{margin:0;color:var(--ink)}
+  table{width:100%;border-collapse:collapse;font-size:14px;display:block;overflow-x:auto}
+  th,td{text-align:left;padding:8px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{font-size:12px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);font-weight:600}
+  td{color:var(--muted)} td a{color:var(--ink);text-decoration:none} td a:hover{color:var(--accent)}
+  a{color:var(--accent)}
+  footer{margin-top:56px;padding-top:22px;border-top:1px solid var(--line);font-size:14px;color:var(--muted)}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <a class="back" href="/">&larr; Tinquill</a>
+  <h1>QR Pop — Open-source licences</h1>
+  <p class="date">Last updated: 9 October 2026 · 211 components</p>
+
+  <p>QR Pop is built on open-source software. Every component in the app is listed below, grouped by the
+  licence it is distributed under. This page is generated from the same data as the in-app list
+  (<em>Settings &rarr; Open-source licences</em>), so the two always match. Thank you to everyone who maintains them.</p>
+
+  <div class="note">
+    <p>Google Play services components (ML Kit, Google Mobile Ads, User Messaging Platform) are distributed by
+    Google under the <a href="https://developer.android.com/studio/terms">Android Software Development Kit License</a>
+    and <a href="https://developers.google.com/terms">Google APIs Terms</a>. Scanning happens on your phone; none of
+    these components receive what you scan or create. See the <a href="../privacy/">privacy policy</a>.</p>
+  </div>
+
+  <h2><a href="https://www.apache.org/licenses/LICENSE-2.0">Apache License 2.0</a> <span class="count">183</span></h2>
+  <table>
+    <thead><tr><th>Component</th><th>Version</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://github.com/mikepenz/AboutLibraries">AboutLibraries Core Library</a></td><td>15.2.0</td></tr>
+      <tr><td><a href="https://github.com/google/accompanist/">Accompanist Drawable Painter library</a></td><td>0.37.3</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/activity#1.13.0">Activity</a></td><td>1.13.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/activity#1.13.0">Activity Compose</a></td><td>1.13.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/activity#1.13.0">Activity Kotlin Extensions</a></td><td>1.13.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/startup#1.1.1">Android App Startup Runtime</a></td><td>1.1.1</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/arch-core#2.2.0">Android Arch-Common</a></td><td>2.2.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/arch-core#2.2.0">Android Arch-Runtime</a></td><td>2.2.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/graphics#1.0.1">Android Graphics Path</a></td><td>1.0.1</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/resourceinspection#1.0.1">Android Resource Inspection - Annotations</a></td><td>1.0.1</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/work#2.7.1">Android WorkManager Kotlin Extensions</a></td><td>2.7.1</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/work#2.7.1">Android WorkManager Runtime</a></td><td>2.7.1</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx">AndroidX Autofill</a></td><td>1.0.0</td></tr>
+      <tr><td><a href="https://developer.android.com/topic/libraries/architecture/index.html">AndroidX Futures</a></td><td>1.1.0</td></tr>
+      <tr><td><a href="https://developer.android.com/topic/libraries/architecture/index.html">AndroidX Futures Kotlin Extensions</a></td><td>1.1.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/lifecycle#2.11.0">Androidx Lifecycle Navigation3 ViewModel</a></td><td>2.11.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/navigation3#1.2.0">Androidx Navigation 3 Runtime</a></td><td>1.2.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/navigation3#1.2.0">Androidx Navigation 3 UI</a></td><td>1.2.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/core#1.0.0">androidx.core:core-backported-fixes</a></td><td>1.0.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/core#1.0.0">androidx.core:core-viewtree</a></td><td>1.0.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/customview#1.0.0">androidx.customview:poolingcontainer</a></td><td>1.0.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/privacysandbox-ads#1.0.0-beta05">androidx.privacysandbox.ads:ads-adservices-java</a></td><td>1.0.0-beta05</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/annotation#1.10.0">Annotation</a></td><td>1.10.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/appcompat#1.7.1">AppCompat</a></td><td>1.7.1</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/appcompat#1.7.1">AppCompat Resources</a></td><td>1.7.1</td></tr>
+      <tr><td><a href="https://github.com/Kotlin/kotlinx.atomicfu">atomicfu</a></td><td>0.28.0</td></tr>
+      <tr><td><a href="https://github.com/google/auto/auto-value-parent/auto-value-annotations">AutoValue Annotations</a></td><td>1.6.3</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/browser#1.9.0">Browser</a></td><td>1.9.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/camera-featurecombinationquery#1.6.2">Camera Feature Combination Query</a></td><td>1.6.2</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/camera#1.6.2">Camera Lifecycle</a></td><td>1.6.2</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/camera#1.6.2">Camera MLKit Vision</a></td><td>1.6.2</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/camera#1.6.2">Camera Video</a></td><td>1.6.2</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/camera#1.6.2">Camera View</a></td><td>1.6.2</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/camera-viewfinder#1.5.1">Camera Viewfinder Core</a></td><td>1.5.1</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/camera#1.6.2">Camera2</a></td><td>1.6.2</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/camera#1.6.2">Camera2 Pipe</a></td><td>1.6.2</td></tr>
+      <tr><td><a href="https://github.com/coil-kt/coil">coil</a></td><td>3.6.3</td></tr>
+      <tr><td><a href="https://github.com/coil-kt/coil">coil-compose</a></td><td>3.6.3</td></tr>
+      <tr><td><a href="https://github.com/coil-kt/coil">coil-compose-core</a></td><td>3.6.3</td></tr>
+      <tr><td><a href="https://github.com/coil-kt/coil">coil-core</a></td><td>3.6.3</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/collection#1.5.0">collections</a></td><td>1.5.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/collection#1.5.0">Collections Kotlin Extensions</a></td><td>1.5.0</td></tr>
+      <tr><td><a href="https://github.com/firebase/firebase-android-sdk">com.google.android.datatransport:transport-api</a></td><td>3.2.0</td></tr>
+      <tr><td><a href="https://github.com/firebase/firebase-android-sdk">com.google.android.datatransport:transport-backend-cct</a></td><td>3.3.0</td></tr>
+      <tr><td><a href="https://github.com/firebase/firebase-android-sdk">com.google.android.datatransport:transport-runtime</a></td><td>3.3.0</td></tr>
+      <tr><td><a href="https://github.com/firebase/firebase-android-sdk">com.google.firebase:firebase-annotations</a></td><td>17.0.0</td></tr>
+      <tr><td>com.google.firebase:firebase-bom</td><td>34.19.0</td></tr>
+      <tr><td><a href="https://github.com/firebase/firebase-android-sdk">com.google.firebase:firebase-common</a></td><td>22.2.1</td></tr>
+      <tr><td><a href="https://github.com/firebase/firebase-android-sdk">com.google.firebase:firebase-components</a></td><td>19.0.0</td></tr>
+      <tr><td><a href="https://github.com/firebase/firebase-android-sdk">com.google.firebase:firebase-config-interop</a></td><td>16.0.1</td></tr>
+      <tr><td><a href="https://github.com/firebase/firebase-android-sdk">com.google.firebase:firebase-crashlytics</a></td><td>20.1.1</td></tr>
+      <tr><td><a href="https://github.com/firebase/firebase-android-sdk">com.google.firebase:firebase-datatransport</a></td><td>19.0.0</td></tr>
+      <tr><td><a href="https://github.com/firebase/firebase-android-sdk">com.google.firebase:firebase-encoders-json</a></td><td>18.0.1</td></tr>
+      <tr><td><a href="https://github.com/firebase/firebase-android-sdk">com.google.firebase:firebase-installations</a></td><td>19.1.2</td></tr>
+      <tr><td><a href="https://github.com/firebase/firebase-android-sdk">com.google.firebase:firebase-installations-interop</a></td><td>17.3.0</td></tr>
+      <tr><td><a href="https://github.com/firebase/firebase-android-sdk">com.google.firebase:firebase-sessions</a></td><td>3.0.8</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/compose-animation#1.12.1">Compose Animation</a></td><td>1.12.1</td></tr>
+      <tr><td><a href="https://github.com/JetBrains/compose-multiplatform">Compose Animation</a></td><td>1.12.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/compose-animation#1.12.1">Compose Animation Core</a></td><td>1.12.1</td></tr>
+      <tr><td><a href="https://github.com/JetBrains/compose-multiplatform">Compose Animation Core</a></td><td>1.12.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/compose-foundation#1.12.1">Compose Foundation</a></td><td>1.12.1</td></tr>
+      <tr><td><a href="https://github.com/JetBrains/compose-multiplatform">Compose Foundation</a></td><td>1.12.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/compose-ui#1.12.1">Compose Geometry</a></td><td>1.12.1</td></tr>
+      <tr><td><a href="https://github.com/JetBrains/compose-multiplatform">Compose Geometry</a></td><td>1.12.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/compose-ui#1.12.1">Compose Graphics</a></td><td>1.12.1</td></tr>
+      <tr><td><a href="https://github.com/JetBrains/compose-multiplatform">Compose Graphics</a></td><td>1.12.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/compose-foundation#1.12.1">Compose Layouts</a></td><td>1.12.1</td></tr>
+      <tr><td><a href="https://github.com/JetBrains/compose-multiplatform">Compose Layouts</a></td><td>1.12.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/compose-material#1.12.1">Compose Material Ripple</a></td><td>1.12.1</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/compose-material3#1.4.0">Compose Material3 Components</a></td><td>1.4.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/compose-runtime#1.12.1">Compose Runtime</a></td><td>1.12.1</td></tr>
+      <tr><td><a href="https://github.com/JetBrains/compose-multiplatform">Compose Runtime</a></td><td>1.12.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/compose-runtime#1.12.1">Compose Runtime Annotation</a></td><td>1.12.1</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/compose-runtime#1.12.1">Compose Runtime Retain</a></td><td>1.12.1</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/compose-runtime#1.12.1">Compose Saveable</a></td><td>1.12.1</td></tr>
+      <tr><td><a href="https://github.com/JetBrains/compose-multiplatform">Compose Saveable</a></td><td>1.12.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/compose-ui#1.12.1">Compose UI</a></td><td>1.12.1</td></tr>
+      <tr><td><a href="https://github.com/JetBrains/compose-multiplatform">Compose UI</a></td><td>1.12.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/compose-ui#1.12.1">Compose UI Preview Tooling</a></td><td>1.12.1</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/compose-ui#1.12.1">Compose UI Text</a></td><td>1.12.1</td></tr>
+      <tr><td><a href="https://github.com/JetBrains/compose-multiplatform">Compose UI Text</a></td><td>1.12.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/compose-ui#1.12.1">Compose Unit</a></td><td>1.12.1</td></tr>
+      <tr><td><a href="https://github.com/JetBrains/compose-multiplatform">Compose Unit</a></td><td>1.12.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/compose-ui#1.12.1">Compose Util</a></td><td>1.12.1</td></tr>
+      <tr><td><a href="https://github.com/JetBrains/compose-multiplatform">Compose Util</a></td><td>1.12.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/core#1.19.1">Core</a></td><td>1.19.1</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/core#1.19.1">Core Kotlin Extensions</a></td><td>1.19.1</td></tr>
+      <tr><td><a href="https://github.com/google/dagger">Dagger</a></td><td>2.60.1</td></tr>
+      <tr><td><a href="https://github.com/google/dagger">Dagger Lint Rules AAR Distribution</a></td><td>2.60.1</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/datastore#1.2.1">DataStore</a></td><td>1.2.1</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/datastore#1.2.1">DataStore Core</a></td><td>1.2.1</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/datastore#1.2.1">DataStore Core Okio</a></td><td>1.2.1</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/emoji2#1.4.0">Emoji2</a></td><td>1.4.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/emoji2#1.4.0">Emoji2 Views Helper</a></td><td>1.4.0</td></tr>
+      <tr><td><a href="https://errorprone.info/error_prone_annotations">error-prone annotations</a></td><td>2.28.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/exifinterface#1.4.2">ExifInterface</a></td><td>1.4.2</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/annotation#1.5.0">Experimental annotation</a></td><td>1.5.0</td></tr>
+      <tr><td><a href="http://findbugs.sourceforge.net/">FindBugs-jsr305</a></td><td>3.0.2</td></tr>
+      <tr><td>firebase-encoders</td><td>17.0.0</td></tr>
+      <tr><td>firebase-encoders-proto</td><td>16.0.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/glance#1.2.0">Glance</a></td><td>1.2.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/glance#1.2.0">Glance AppWidget Protos</a></td><td>1.2.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/glance#1.2.0">Glance For App Widgets</a></td><td>1.2.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/glance#1.2.0">Glance Material</a></td><td>1.2.0</td></tr>
+      <tr><td><a href="https://github.com/google/guava/failureaccess">Guava InternalFutureFailureAccess and InternalFutures</a></td><td>1.0.2</td></tr>
+      <tr><td><a href="https://github.com/google/guava/listenablefuture">Guava ListenableFuture only</a></td><td>9999.0-empty-to-avoid-conflict-with-guava</td></tr>
+      <tr><td><a href="https://github.com/google/guava">Guava: Google Core Libraries for Java</a></td><td>33.3.1-android</td></tr>
+      <tr><td><a href="https://github.com/google/dagger">Hilt Android</a></td><td>2.60.1</td></tr>
+      <tr><td><a href="https://github.com/google/dagger">Hilt Core</a></td><td>2.60.1</td></tr>
+      <tr><td><a href="https://github.com/google/j2objc/">J2ObjC Annotations</a></td><td>3.0.0</td></tr>
+      <tr><td><a href="https://github.com/eclipse-ee4j/injection-api">Jakarta Dependency Injection</a></td><td>2.0.1</td></tr>
+      <tr><td><a href="http://code.google.com/p/atinject/">javax.inject</a></td><td>1</td></tr>
+      <tr><td><a href="https://github.com/JetBrains/java-annotations">JetBrains Java Annotations</a></td><td>23.0.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack">Jetpack Compose Libraries BOM</a></td><td>2026.09.00</td></tr>
+      <tr><td><a href="http://jspecify.org/">JSpecify annotations</a></td><td>1.0.0</td></tr>
+      <tr><td><a href="https://kotlinlang.org/">Kotlin Libraries bill-of-materials</a></td><td>1.8.0</td></tr>
+      <tr><td><a href="https://kotlinlang.org/">Kotlin Stdlib</a></td><td>2.4.10</td></tr>
+      <tr><td><a href="https://kotlinlang.org/">Kotlin Stdlib Jdk7</a></td><td>1.8.22</td></tr>
+      <tr><td><a href="https://kotlinlang.org/">Kotlin Stdlib Jdk8</a></td><td>1.8.22</td></tr>
+      <tr><td><a href="https://github.com/Kotlin/kotlinx.coroutines">kotlinx-coroutines-android</a></td><td>1.11.0</td></tr>
+      <tr><td><a href="https://github.com/Kotlin/kotlinx.coroutines">kotlinx-coroutines-bom</a></td><td>1.11.0</td></tr>
+      <tr><td><a href="https://github.com/Kotlin/kotlinx.coroutines">kotlinx-coroutines-core</a></td><td>1.11.0</td></tr>
+      <tr><td><a href="https://github.com/Kotlin/kotlinx.coroutines">kotlinx-coroutines-play-services</a></td><td>1.11.0</td></tr>
+      <tr><td><a href="https://github.com/Kotlin/kotlinx.serialization">kotlinx-serialization-bom</a></td><td>1.11.0</td></tr>
+      <tr><td><a href="https://github.com/Kotlin/kotlinx.serialization">kotlinx-serialization-core</a></td><td>1.11.0</td></tr>
+      <tr><td><a href="https://github.com/Kotlin/kotlinx.serialization">kotlinx-serialization-json</a></td><td>1.11.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/lifecycle#2.11.0">Lifecycle Kotlin Extensions</a></td><td>2.11.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/lifecycle#2.11.0">Lifecycle LiveData</a></td><td>2.11.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/lifecycle#2.11.0">Lifecycle LiveData Core</a></td><td>2.11.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/lifecycle#2.11.0">Lifecycle Process</a></td><td>2.11.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/lifecycle#2.11.0">Lifecycle Runtime</a></td><td>2.11.0</td></tr>
+      <tr><td><a href="https://github.com/JetBrains/compose-jb">Lifecycle Runtime</a></td><td>2.9.6</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/lifecycle#2.11.0">Lifecycle Runtime Compose</a></td><td>2.11.0</td></tr>
+      <tr><td><a href="https://github.com/JetBrains/compose-jb">Lifecycle Runtime Compose</a></td><td>2.9.6</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/lifecycle#2.11.0">Lifecycle Service</a></td><td>2.11.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/lifecycle#2.11.0">Lifecycle ViewModel</a></td><td>2.11.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/lifecycle#2.11.0">Lifecycle ViewModel Compose</a></td><td>2.11.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/lifecycle#2.11.0">Lifecycle ViewModel Kotlin Extensions</a></td><td>2.11.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/lifecycle#2.11.0">Lifecycle ViewModel with SavedState</a></td><td>2.11.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/lifecycle#2.11.0">Lifecycle-Common</a></td><td>2.11.0</td></tr>
+      <tr><td><a href="https://github.com/JetBrains/compose-jb">Lifecycle-Common</a></td><td>2.9.6</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/lifecycle#2.11.0">Lifecycle-Common for Java 8</a></td><td>2.11.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/lifecycle#2.11.0">LiveData Core Kotlin Extensions</a></td><td>2.11.0</td></tr>
+      <tr><td><a href="https://github.com/androidx/media">Media3 common module</a></td><td>1.9.0</td></tr>
+      <tr><td><a href="https://github.com/androidx/media">Media3 Container module</a></td><td>1.9.0</td></tr>
+      <tr><td><a href="https://github.com/androidx/media">Media3 Muxer module</a></td><td>1.9.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/navigationevent#1.1.1">Navigation Event</a></td><td>1.1.1</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/navigationevent#1.1.1">NavigationEvent Compose</a></td><td>1.1.1</td></tr>
+      <tr><td><a href="https://github.com/lysine-dev/okio/">okio</a></td><td>3.18.1</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/datastore#1.2.1">Preferences DataStore</a></td><td>1.2.1</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/datastore#1.2.1">Preferences DataStore Core</a></td><td>1.2.1</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/datastore#1.2.1">Preferences DataStore Proto</a></td><td>1.2.1</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/privacysandbox-ads#1.0.0-beta05">Privacy Sandbox for Ad Services</a></td><td>1.0.0-beta05</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/profileinstaller#1.4.1">Profile Installer</a></td><td>1.4.1</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/core#1.1.0">RemoteViews</a></td><td>1.1.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/room#2.8.5">Room Kotlin Extensions</a></td><td>2.8.5</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/room#2.8.5">Room-Common</a></td><td>2.8.5</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/room#2.8.5">Room-Runtime</a></td><td>2.8.5</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/savedstate#1.4.0">Saved State</a></td><td>1.4.0</td></tr>
+      <tr><td><a href="https://github.com/JetBrains/compose-jb">Saved State</a></td><td>1.3.6</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/savedstate#1.4.0">Saved State Compose</a></td><td>1.4.0</td></tr>
+      <tr><td><a href="https://github.com/JetBrains/compose-jb">Saved State Compose</a></td><td>1.3.6</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/savedstate#1.4.0">SavedState Kotlin Extensions</a></td><td>1.4.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/core#1.2.0">SplashScreen</a></td><td>1.2.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/sqlite#2.6.2">SQLite</a></td><td>2.6.2</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/sqlite#2.6.2">SQLite Framework Integration</a></td><td>2.6.2</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx">Support AnimatedVectorDrawable</a></td><td>1.1.0</td></tr>
+      <tr><td><a href="http://developer.android.com/tools/extras/support-library.html">Support Cursor Adapter</a></td><td>1.0.0</td></tr>
+      <tr><td><a href="http://developer.android.com/tools/extras/support-library.html">Support Custom View</a></td><td>1.0.0</td></tr>
+      <tr><td><a href="http://developer.android.com/tools/extras/support-library.html">Support Drawer Layout</a></td><td>1.0.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/fragment#1.5.4">Support fragment</a></td><td>1.5.4</td></tr>
+      <tr><td><a href="http://developer.android.com/tools/extras/support-library.html">Support Interpolators</a></td><td>1.0.0</td></tr>
+      <tr><td><a href="http://developer.android.com/tools/extras/support-library.html">Support loader</a></td><td>1.0.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx">Support VectorDrawable</a></td><td>1.1.0</td></tr>
+      <tr><td><a href="http://developer.android.com/tools/extras/support-library.html">Support View Pager</a></td><td>1.0.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/tracing#1.3.0">Tracing</a></td><td>1.3.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/tracing#1.3.0">Tracing Kotlin Extensions</a></td><td>1.3.0</td></tr>
+      <tr><td><a href="http://developer.android.com/tools/extras/support-library.html">VersionedParcelable</a></td><td>1.1.1</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/hilt#1.4.0">ViewModel Compose Hilt Extension</a></td><td>1.4.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/hilt#1.4.0">ViewModel Hilt Extension</a></td><td>1.4.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/webkit#1.12.1">WebKit</a></td><td>1.12.1</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/window#1.5.0">WindowManager</a></td><td>1.5.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/window#1.5.0">WindowManager Core</a></td><td>1.5.0</td></tr>
+    </tbody>
+  </table>
+  <h2><a href="https://developer.android.com/studio/terms">Android Software Development Kit License</a> <span class="count">13</span></h2>
+  <table>
+    <thead><tr><th>Component</th><th>Version</th></tr></thead>
+    <tbody>
+      <tr><td>firebase-measurement-connector</td><td>20.0.1</td></tr>
+      <tr><td>hsdp</td><td>2.0.1</td></tr>
+      <tr><td>image</td><td>1.0.0-beta1</td></tr>
+      <tr><td>play-services-ads</td><td>25.5.0</td></tr>
+      <tr><td>play-services-ads-api</td><td>25.5.0</td></tr>
+      <tr><td>play-services-ads-identifier</td><td>18.0.0</td></tr>
+      <tr><td>play-services-appset</td><td>16.0.1</td></tr>
+      <tr><td>play-services-base</td><td>18.5.0</td></tr>
+      <tr><td>play-services-basement</td><td>18.10.0</td></tr>
+      <tr><td>play-services-measurement-base</td><td>20.1.2</td></tr>
+      <tr><td>play-services-measurement-sdk-api</td><td>20.1.2</td></tr>
+      <tr><td>play-services-tasks</td><td>18.4.0</td></tr>
+      <tr><td>user-messaging-platform</td><td>4.0.0</td></tr>
+    </tbody>
+  </table>
+  <h2>ML Kit Terms of Service <span class="count">6</span></h2>
+  <table>
+    <thead><tr><th>Component</th><th>Version</th></tr></thead>
+    <tbody>
+      <tr><td>barcode-scanning</td><td>17.3.0</td></tr>
+      <tr><td>barcode-scanning-common</td><td>17.0.0</td></tr>
+      <tr><td>common</td><td>18.11.0</td></tr>
+      <tr><td>play-services-mlkit-barcode-scanning</td><td>18.3.1</td></tr>
+      <tr><td>vision-common</td><td>17.3.0</td></tr>
+      <tr><td>vision-interfaces</td><td>16.3.0</td></tr>
+    </tbody>
+  </table>
+  <h2><a href="https://opensource.org/license/bsd-3-clause">BSD 3-Clause &quot;New&quot; or &quot;Revised&quot; License</a> <span class="count">3</span></h2>
+  <table>
+    <thead><tr><th>Component</th><th>Version</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/glance#1.2.0">Glance AppWidget External Protobuf</a></td><td>1.2.0</td></tr>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/datastore#1.2.1">Preferences External Protobuf</a></td><td>1.2.1</td></tr>
+      <tr><td><a href="https://developers.google.com/protocol-buffers/protobuf-javalite/">Protocol Buffers [Lite]</a></td><td>4.36.2</td></tr>
+    </tbody>
+  </table>
+  <h2><a href="https://opensource.org/license/mit">MIT License</a> <span class="count">3</span></h2>
+  <table>
+    <thead><tr><th>Component</th><th>Version</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://checkerframework.org/">Checker Qual</a></td><td>3.43.0</td></tr>
+      <tr><td><a href="https://www.nayuki.io/page/qr-code-generator-library">QR Code generator library</a></td><td>1.8.0</td></tr>
+      <tr><td><a href="https://www.nayuki.io/page/qr-code-generator-library">QR Code generator library (Nayuki)</a></td><td></td></tr>
+    </tbody>
+  </table>
+  <h2>Apache License 2.0 / BSD 3-Clause &quot;New&quot; or &quot;Revised&quot; License <span class="count">1</span></h2>
+  <table>
+    <thead><tr><th>Component</th><th>Version</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://developer.android.com/jetpack/androidx/releases/camera#1.6.2">Camera Core</a></td><td>1.6.2</td></tr>
+    </tbody>
+  </table>
+  <h2><a href="https://www.mozilla.org/MPL/2.0/">Mozilla Public License 2.0</a> <span class="count">1</span></h2>
+  <table>
+    <thead><tr><th>Component</th><th>Version</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://publicsuffix.org">Public Suffix List</a></td><td></td></tr>
+    </tbody>
+  </table>
+  <h2><a href="https://openfontlicense.org">SIL Open Font License 1.1</a> <span class="count">1</span></h2>
+  <table>
+    <thead><tr><th>Component</th><th>Version</th></tr></thead>
+    <tbody>
+      <tr><td><a href="https://github.com/tokotype/PlusJakartaSans">Plus Jakarta Sans (font)</a></td><td></td></tr>
+    </tbody>
+  </table>
+
+  <footer>Tinquill — <a href="mailto:inscorp.dev@gmail.com">inscorp.dev@gmail.com</a> · <a href="../privacy/">Privacy policy</a><br>&copy; 2026 Tinquill</footer>
+</div>
+</body>
+</html>
